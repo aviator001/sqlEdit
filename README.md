@@ -96,12 +96,12 @@ image_upload_folder=5
 <h3>Setup</h3>
 
 <h3>Step by Step Insructions for Usage</h3>
-<pre><code>
+<code>
 <?	$db_name="Enter database name";
 	$table="Enter name of table you want to edit";
-	
-	include "class/utils.class.php";
 	parse_str(http_build_query($_GET));
+
+	include "class/utils.class.php";
 	$c=new utils;
 	$c->connect(DB_SERVER,DB_USER,DB_PASS,$db_name);
 	
