@@ -96,5 +96,17 @@ image_upload_folder=5
 <h3>Setup</h3>
 
 <h3>Step by Step Insructions for Usage</h3>
+<pre><code>
+<?	
+	$db_name="Enter database name";
+	$table="Enter name of table you want to edit";
+	
+	include "class/utils.class.php";
+	parse_str(http_build_query($_GET));
+	$c=new utils;
+	$c->connect(DB_SERVER,DB_USER,DB_PASS,$db_name);
 
+	echo $c->SQLEdit($db_name,$table);
+	include "paginate.php";
+</code></pre>
 <h3>Real World Code Samples</h3>
