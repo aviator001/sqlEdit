@@ -96,7 +96,7 @@ image_upload_folder=5
 <h3>Setup</h3>
 
 <h3>Step by Step Insructions for Usage</h3>
-<code>
+<pre><code>
 <?	$db_name="Enter database name";
 	$table="Enter name of table you want to edit";
 	parse_str(http_build_query($_GET));
@@ -108,5 +108,5 @@ image_upload_folder=5
 	echo $c->SQLEdit($db_name,$table);
 	include "paginate.php";
 ?>	
-	</code>
+</code></pre>
 <h3>Real World Code Samples</h3>
