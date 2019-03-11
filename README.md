@@ -100,12 +100,10 @@ image_upload_folder=5
 <?	
 	$db_name="Enter database name";
 	$table="Enter name of table you want to edit";
-	
 	include "class/utils.class.php";
 	parse_str(http_build_query($_GET));
 	$c=new utils;
 	$c->connect(DB_SERVER,DB_USER,DB_PASS,$db_name);
-
 	echo $c->SQLEdit($db_name,$table);
 	include "paginate.php";
 </code></pre>
