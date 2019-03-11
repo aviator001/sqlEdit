@@ -1,0 +1,12 @@
+REMAINING WORK:
+1. On delete row: spl effect
+2. Toggle between grid/form views, validate mobile responsiveness
+3. Sortable columns
+4. Ability to create form from scratch and auto generate MySQL table from form
+5. Clean table grid on details.php
+6. Create plugin system - each field type is a plugin
+7. Add rest of the autocomplete fields and add graph, poll, star rating, youtube video, cocojs, best buy, yellow page, craigslist, people finder, background check type fields
+
+DENTIST:
+1. Ability to add dentist articles to report
+2. Finish 'case' page

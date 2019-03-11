@@ -1,0 +1,60 @@
+<?
+	ini_set('display_errors',0);
+	parse_str(http_build_query($_GET));
+	include "class/utils.class.php";
+	$c=new utils;
+	$c->connect(DB_SERVER,DB_USER,DB_PASS,$db_name);
+	$fieldNames=$c->getAllFields($db_name,$table);
+	$c->title='ADD NEW RECORD TO ' . strToUpper($table);
+	$c->user_file_name	=	"php_" . $table . ".php";
+	$c->user_js_files	=	$user_js_files;
+	$c->user_css_files	=	$user_css_files;
+	$c->user_php_files	=	$user_php_files;
+	$c->user_php_code	=	$user_php_code;
+	$c->user_page_intro	=	$user_page_intro;
+	$c->user_page_css	=	$user_page_css;
+	$c->user_page_js	=	$user_page_js;
+	$c->table			=	$table;
+	$c->field_names		=	$fieldNames;
+
+	$fi=$c->setFieldTypeDefaults($fieldNames);
+	$ft=$_GET['field_types'];
+	$ft=explode(",",$ft);
+	$fns=explode(",",$fieldNames);
+	$fss=explode(",",$field_select);
+	$fsc=explode(",",$field_check);
+	$fsr=explode(",",$field_radio);
+	$flh=explode(",",$field_hide);
+	$flb=explode(",",$field_labels);
+	$fld=explode(",",$field_defaults);
+	$flr=explode(",",$field_rules);
+	$flp=explode(",",$field_placeholders);
+	for ($i=0;$i<count($fns); $i++) {
+		if ($ft[$i]) $field_type[$i]=$ft[$i];
+			else $field_type[$i]=$fi[0][$i];
+	}	
+	$c->field_types		=	$field_type;
+	$c->field_select	=	$fss;
+	$c->field_check		=	$fsc;
+	$c->field_radio		=	$fsr;
+	$c->field_labels	=	$field_labels;
+	$c->field_defaults	= 	$fld;
+	$c->field_placeholders=	$flp;
+	$c->field_content	=	$field_content;
+	$c->field_hide		=	$flh;
+	$c->field_rules		=	$flr;
+	$c->field_icons		=	$fi[1];	
+	$c->field_help		=	$field_help;
+	$c->field_source	=	$field_source;
+	$c->field_ip_type	=	$field_ip_type;
+	$c->field_validate	=	$field_validate;
+	$c->field_status	=	$field_status;
+	$c->field_required	= 	$field_required;
+	$c->field_format	=	$field_format;
+	$c->field_pre_fn	=	$field_pre_fn;
+	$c->field_curr_fn	=	$field_curr_fn;
+	$c->field_post_fn	=	$field_post_fn;
+	$c->field_db_chk	=	$field_db_chk;
+	$c->field_val_regex	=	$field_val_regex;
+	echo $c->createPHPForm();
+?>

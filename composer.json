@@ -1,0 +1,13 @@
+{
+    "name": "gangsterforms/sqledit",
+    "description": "Generate web app to view, add and edit data in any MySQL table or Query in just 4 lines of code, with pagination auto generated as well, as are the media queries, to build a truly responsive app that is mobile friendly and works accross all platforms and screen sizes.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gautam Sharma",
+            "email": "xtue.web@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
