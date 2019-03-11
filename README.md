@@ -107,5 +107,6 @@ image_upload_folder=5
 	
 	echo $c->SQLEdit($db_name,$table);
 	include "paginate.php";
-</code></pre>
+?>	
+	</code>
 <h3>Real World Code Samples</h3>
