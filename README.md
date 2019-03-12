@@ -56,7 +56,7 @@ Data is, without exception, loaded using the jquery ajax library, and as a rtesu
 <h4>STEP 1 </h4>
 <pre><code>
 git clone https://github.com/aviator001/sqlEdit.git
-</code</pre>
+</code></pre>
 Once downloaded, it create a folder call sqlEdit.
 <h4>STEP 2 </h4>
 <pre><code>
