@@ -1,4 +1,5 @@
 <?
+namespace gangsterforms/sqledit;
 class sql {
 	public function connect($ipx="199.91.65.82",$user="root",$pswd="Shadow2015!",$dbx="txt") {
 			global $db;
