@@ -17,5 +17,11 @@
         "psr-4": {
             "gangsterforms\\sqledit\\": "src/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/aviator001/sqlEdit.git"
+        }
+    ]
 }
