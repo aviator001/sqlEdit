@@ -29,8 +29,28 @@ There are in fact 2 main functions, sqlEdit and sqlBrowse. As explained. sqlEdit
 PHP, MySQL
 
 <h1>Features</h1>
-
-<h3>Pagination</h3>
+<h2>Data Manipulation</h2>
+<h3>Browse MySQL Data</h3>
+<h3>Edit MySQL table in browser</h3>
+<h3>Add New Row</h3>
+<h3>Add New Row</h3>
+<h3>Delete Row</h3>
+<h2>Data Presentation</h2>
+<h3>Auto detect mobile - 100% responsive</h3>
+<h3>View Modes:</h3>
+<div>Switch easily between 2 display modes</div>
+<ul>
+    <li>Boxed format</li>
+    <li>Full width format</li>
+ </ul>
+<h3>Data View Format</h3>
+<div>Switch easily between 2 data formats</div>
+<ul>
+    <li>Grid View</li>
+    <li>Single record form mode</li>
+ </ul>
+ 
+<h2>Pagination</h2>
 The automatic pagination uses a truly unique approach to seemless handle datasets ranging from 10 rows to 2 million rows, all without any complicated juggling of page numbers or special case handling code - and what resulys is one of the cleanest pagination implementations that you will see, that handles 10 pages the same way it handles 2,000,000. See examples or screenshots for examples.
 
 Pagination may be turned off or on at any time by seeting the config values in the settings.ini file.
@@ -97,7 +117,7 @@ items_per_page=5
 pagination=on
 </pre></code>
 
-<h2>Insructions for Usage</h2>
+<h2>Running sqlEdit</h2>
 <h3>Step 1</h3>
 <h4>Edit sampleCode.php'</h4>
 <div>Once settings.ini is configured, open up the sample code php file - and enter in values fro the database and table (first 2 lines  as shown below.)</div>
@@ -123,3 +143,6 @@ pagination=on
     echo $c->SQLEdit($db_name,$table);
     include "paginate.php";
 </code></pre>
+<h2>Insructions for Usage</h2>
+<h2>Screenshots</h2>
+
