@@ -2,7 +2,7 @@
 	$db_name="jb";
 	$table="blogs";
 	
-	include "php/class/utils.class.php";
+	include "src/utils.php";
 	parse_str(http_build_query($_GET));
 	$c=new utils;
 	$c->connect(DB_SERVER,DB_USER,DB_PASS,$db_name);
