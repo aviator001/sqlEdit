@@ -50,8 +50,8 @@ There exists a trigger point, beyond which, if exceeded, the number of colums is
 Data is, without exception, loaded using the jquery ajax library, and as a rtesult, the user is never put through the experience of being constantly interrupted, while waiting for pages reloading over and over, and circumventing the creation of unnecessay high amount of stress externally in the network, and internally on the webserver filesystem i/o operations.
 
 
-<h3>Installation</h3>
-<h4>OPTION 1: GIT</h4>
+<h2>Installation</h2>
+<h3>OPTION 1: GIT</h3>
 <div> This the easiest way; Run the following code in shell</div>
 <h4>STEP 1 </h4>
 <pre><code>
@@ -64,9 +64,8 @@ cd sqlEdit
 </code></pre>
 
 <h4>STEP 3 </h4>
-Basically you need to modify 2 files - put in your database info etc.
-These files are:
 <h4>settings.ini</h4>
+First, you will need to do a one time setup - configure your settings.ini file with the information below and you  mare done with configuration.
 <div>Here is a full last of parameters  that you can set in the settings.ini file.:</div>
 <ul>
 <li>Database Server IP</li>
@@ -74,7 +73,7 @@ These files are:
 <li>Database Password</li>
 <li>Database Name</li>
 </ul>
-
+<div>And this is what settings.ini looks like</div>
 <pre><code>
 <b><i>#Database user name</i></b>
 db_user=
@@ -95,7 +94,8 @@ items_per_page=5
 pagination=on
 </pre></code>
 
-<h4>OPTION 2: DOWNLOAD BELOW:</h4>
+<h4>OPTION 2: DOWNLOAD ZIP:</h4>
+
 <h3>Step by Step Insructions for Usage</h3>
 <h3>Real World Code Samples</h3>
 <pre><code>
