@@ -12,13 +12,8 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "gangsterforms\\sqledit\\": "src/"
+            "gangsterforms\\sqledit\\": "src/",
+	        "files": ["src/","php/"]
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "./php"
-        }
-    ]
+    }
 }
