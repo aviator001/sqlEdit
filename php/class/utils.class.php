@@ -1,5 +1,6 @@
 <?
-namespace gangsterforms\sqledit;
+namespace gangsterforms/sqledit;
+
 class utils {
 	/** 
 	 * php extension
