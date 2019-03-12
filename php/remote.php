@@ -1,1 +1,0 @@
-<? echo file_get_contents('https://' . $_GET['url']); ?>

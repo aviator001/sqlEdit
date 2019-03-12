@@ -191,17 +191,22 @@
 		}
 
 		function _goto_page(page) {
+			var table=qs('table')
+			if (!table) {
+				table='<?=$table;?>'
+				if (!table) table=getCookie('table')
+			}
 			if (page>=getCookie('last_page')*1) page=getCookie('last_page')*1
 					if (page<0) page=0;
 					start=page*items_per_page;
-					if (qs('table')) {
+					if (table  !== '') {
 						qry="select * from "+table+" limit " + start +"," + items_per_page
 					} else {
 						qry=qs('query') + " limit " + page + "," + items_per_page;
 					}
-
+					var url='getEditHTML.php?wideView='+getCookie('wideView')+'&qry='+qry+'&'+qstr+'&db='+getCookie('db_name')
 					$.ajax({
-						url		:	'getEditHTML.php?wideView='+getCookie('wideView')+'&qry='+qry+'&'+qstr,
+						url		:	url,
 						success	:	function(data){
 							$('#editData').html(data)
 						}

@@ -5,6 +5,6 @@
 	parse_str(http_build_query($_GET),$arr);
 	include "class/utils.class.php";
 	$c=new utils;
-	$c->connect(DB_SERVER,DB_USER,DB_PASS,$_COOKIE['db_name']);
+	$c->connect(DB_SERVER,DB_USER,DB_PASS,$db);
 	echo $c->queryEDIT($qry,$wideView);
 ?>
