@@ -61,7 +61,7 @@ Once downloaded, it create a folder call sqlEdit.
 <h4>STEP 2 </h4>
 <pre><code>
 cd sqlEdit
-</code</pre>
+</code></pre>
 
 <h4>STEP 3 </h4>
 Basically you need to modify 2 files - put in your database info etc.
