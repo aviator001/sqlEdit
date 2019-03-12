@@ -53,13 +53,13 @@ Data is, without exception, loaded using the jquery ajax library, and as a rtesu
 <h2>Installation</h2>
 <div>2 step process. Get files, and configure. Done. You can get the source files in 2 ways. GIT or download a zip.</div>
 
-<h3>STEP 1 </h3>
-<h4>Option 1</h4>
+<h3>Step 1 </h3>
+<h4>OPTION 1</h4>
 <pre><code>
 git clone https://github.com/aviator001/sqlEdit.git
 </code></pre>
 
-<h3>Option 2</h3>
+<h4>OPTION 2</h4>
 <h4>Download from link below:></h4>
 <pre><code>
 https://gangsterforms.com/sqlEdit.zip
@@ -68,7 +68,7 @@ https://gangsterforms.com/sqlEdit.zip
 <div>Once downloaded, unzip archive anywhere.
 
 
-<h3>STEP 2 </h3>
+<h3>Step 2 </h3>
 <h4>Configure settings.ini</h4>
 
 <div>Both options, GIT and Zip file download it will create a folder call sqlEdit. As part of the next an final step, you will configure your settings, by modifying the settings.ini file that is in the sqlEdit folder.</div>
@@ -102,10 +102,16 @@ items_per_page=5
 pagination=on
 </pre></code>
 
-<h4>OPTION 2: DOWNLOAD ZIP:</h4>
+<h2>Insructions for Usage</h2>
+<h3>Step 1</h3>
+<h4>Edit sampleCode.php'</h4>
+<div>Once settings.ini is configured, open up the sample code php file - and enter in values fro the database and table (first 2 lines  as shown below.)</div>
 
-<h3>Step by Step Insructions for Usage</h3>
-<h3>Real World Code Samples</h3>
+<h3>Step 2</h3>
+<h4>Run sampleCode.php'</h4>
+<div>Open sampleCode.php in your browser, and you will be presented with the data from the table that you specified in editable format.</div>
+
+<h2>Real World Code Samples</h2>
 <pre><code>
 	$db_name="Enter database name";
 	$table="Enter name of table you want to edit";
