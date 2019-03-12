@@ -62,6 +62,7 @@ Once downloaded, it create a folder call sqlEdit.
 <pre><code>
 cd sqlEdit
 </code</pre>
+
 <h4>STEP 3 </h4>
 Basically you need to modify 2 files - put in your database info etc.
 These files are:
@@ -73,6 +74,7 @@ These files are:
 <li>Database Password</li>
 <li>Database Name</li>
 </ul>
+
 <pre><code>
 <b><i>#Database user name</i></b>
 db_user=
@@ -91,7 +93,7 @@ items_per_page=5
 
 <b><i>#Max number of items to be displayed per page</i></b>
 pagination=on
-
+</pre></code>
 
 <h4>OPTION 2: DOWNLOAD BELOW:</h4>
 <h3>Step by Step Insructions for Usage</h3>
