@@ -133,7 +133,7 @@ pagination=on
 
 <h2>Running sqlEdit</h2>
 <h3>Step 1</h3>
-<h4>Edit sampleCode.php'</h4>
+<h4>Edit sampleCode.php</h4>
 <div>Once settings.ini is configured, open up the sample code php file - and enter in values fro the database and table (first 2 lines  as shown below.)</div>
 
 <h3>Step 2</h3>
@@ -159,4 +159,4 @@ pagination=on
 </code></pre>
 <h2>Quick User Guide</h2>
 <h2>Screenshots</h2>
-
+ 
