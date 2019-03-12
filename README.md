@@ -90,12 +90,10 @@ image_upload_folder=5
     catalog_db_name=terra
     catalog_tb_name=autocomplete
 </code></pre>
-
 <h3>Installation</h3>
-
 <h3>Setup</h3>
-
 <h3>Step by Step Insructions for Usage</h3>
+<h3>Real World Code Samples</h3>
 <pre><code>
 <?	$db_name="Enter database name";
 	$table="Enter name of table you want to edit";
@@ -109,8 +107,3 @@ image_upload_folder=5
 	include "paginate.php";
 ?>	
 </code></pre>
-<<<<<<< HEAD
-<h3>Real World Code Samples</h3>
-=======
-<h3>Real World Code Samples</h3>
->>>>>>> master
