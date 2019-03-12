@@ -2,7 +2,10 @@
 Generate web app to view, add and edit data in any MySQL table or Query in just 4 lines of code, with pagination auto generated as well, as are the media queries, to build a truly responsive app that is mobile friendly  and works accross all platforms and screen sizes.
 <br><br>
 There are in fact 2 main functions, sqlEdit and sqlBrowse. As explained. sqlEdit has the ability ot add.modify data, however sqlBrowse can only generate view only apps.
-
+<h2>Practical Applications</h2>
+<h3>Rapid Development</h3>
+<h3>Ancillary Capacity to Primary Application</h3>
+<h4>
 <h2>Requirements and Dependencies</h2>
 <h3>PHP Classes</h3>
 <ul>
@@ -134,8 +137,8 @@ pagination=on
 <pre><code>
  /*******************************************************************************
   * Modify first 2 lines only! 
-  * $db_name:  Enter the MySQL table that you want to edit data for, and,
-  * $table: Enter the MySQL Database Name that has the table you want to edit
+  * $table:  Enter the MySQL table that you want to edit data for, and,
+  * $db_name: Enter the MySQL Database Name that has the table you want to edit
   *****************************************************************************/
   
     $db_name="Enter database name";
