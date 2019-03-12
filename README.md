@@ -60,7 +60,7 @@ git clone https://github.com/aviator001/sqlEdit.git
 </code></pre>
 
 <h3>Option 2</h3>
-<h4>Download from link below:>/h4>
+<h4>Download from link below:></h4>
 <pre><code>
 https://gangsterforms.com/sqlEdit.zip
 </code></pre>
