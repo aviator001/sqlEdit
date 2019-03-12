@@ -109,4 +109,8 @@ image_upload_folder=5
 	include "paginate.php";
 ?>	
 </code></pre>
+<<<<<<< HEAD
 <h3>Real World Code Samples</h3>
+=======
+<h3>Real World Code Samples</h3>
+>>>>>>> master
