@@ -49,9 +49,30 @@ There exists a trigger point, beyond which, if exceeded, the number of colums is
 <h3>User Experience.</h3>
 Data is, without exception, loaded using the jquery ajax library, and as a rtesult, the user is never put through the experience of being constantly interrupted, while waiting for pages reloading over and over, and circumventing the creation of unnecessay high amount of stress externally in the network, and internally on the webserver filesystem i/o operations.
 
-<h3>Global Properties Set via INI File</h3>
-Here is a full last of parameters  that you can set in the settings.ini file.
 
+<h3>Installation</h3>
+<h4>OPTION 1: GIT</h4>
+<div> This the easiest way; Run the following code in shell</div>
+<h4>STEP 1 </h4>
+<pre><code>
+git clone https://github.com/aviator001/sqlEdit.git
+</code</pre>
+Once downloaded, it create a folder call sqlEdit.
+<h4>STEP 2 </h4>
+<pre><code>
+cd sqlEdit
+</code</pre>
+<h4>STEP 3 </h4>
+Basically you need to modify 2 files - put in your database info etc.
+These files are:
+<h4>settings.ini</h4>
+<div>Here is a full last of parameters  that you can set in the settings.ini file.:</div>
+<ul>
+<li>Database Server IP</li>
+<li>Database Username</li>
+<li>Database Password</li>
+<li>Database Name</li>
+</ul>
 <pre><code>
 <b><i>#Database user name</i></b>
 db_user=
@@ -65,37 +86,14 @@ db_name=
 <b><i>#Database Server IP Address without any quotes</i></b>
 db_server=
 
-<b><i>#Represents the root folder where this application wa installed, in absolute form.</i></b>
-host=sugardaddyscam.com/form
-
-<b><i>#Represents the webroot folder, as in the external public web URL in absolute form.</i></b>
-app=/form
-
-<b><i>#Represents the publically accesible web url that holds the generated PHP files</i></b>
-out_full=/sites/home/scam/public_html/form/output
-
-<b><i>#Represents the internal folder locatiion generated PHP files</i></b>
-out=/form/output
-
 <b><i>#Max number of items to be displayed per page</i></b>
 items_per_page=5
 
 <b><i>#Max number of items to be displayed per page</i></b>
 pagination=on
 
-<b><i>#Max number of items to be displayed per page</i></b>
-image_upload_folder=5
 
-<b><i>#Autocomplete catalog table</i></b>
-    catalog_db_name=terra
-    catalog_tb_name=autocomplete
-</code></pre>
-<h3>Installation</h3>
-<h4>OPTION 1: COMPOSER</h4>
-<div> This the easiest way; Run the following code in shell</div>
-<pre><code>
-composer require gangsterforms/sqledit
-<h4>OPTION 2: GIT</h4>
+<h4>OPTION 2: DOWNLOAD BELOW:</h4>
 <h3>Step by Step Insructions for Usage</h3>
 <h3>Real World Code Samples</h3>
 <pre><code>
