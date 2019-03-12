@@ -95,7 +95,7 @@ image_upload_folder=5
 <h3>Step by Step Insructions for Usage</h3>
 <h3>Real World Code Samples</h3>
 <pre><code>
-<?	$db_name="Enter database name";
+<?<?	$db_name="Enter database name";
 	$table="Enter name of table you want to edit";
 	parse_str(http_build_query($_GET));
 
