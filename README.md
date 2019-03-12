@@ -30,12 +30,17 @@ PHP, MySQL
 
 <h1>Features</h1>
 <h2>1.0 Data Manipulation</h2>
+<div>View, Browse, Edit, Add or Delete data from any MySQL table in an elegant and clean HTML table format</div>
 <h4>1.1 Browse MySQL Data</h4>
+<div>Display data in any MySQL table in an elegant and clean HTML table format</div>
 <h4>1.2 Edit MySQL table in browser</h4>
+<div>Ajax edit data in any MySQL table in an elegant and clean HTML table Grid format</div>
 <h4>1.3 Add New Row</h4>
-<h4>1.4 Add New Row</h4>
-<h4>1.5 Delete Row</h4>
+<div>Add a new record to MySQL table that you are currently editing</div>
+<h4>1.4 Delete Row</h4>
+<div>Delete record from MySQL table that you are currently editing</div>
 <h2>2.0 Data Presentation</h2>
+<div>Provides multiple options, for best user experience</div>
 <h4>2.1 Auto detect mobile - 100% responsive</h4>
 <h4>2.2 Select View Mode:</h4>
 <div>Switch easily between 2 display modes</div>
@@ -142,6 +147,6 @@ pagination=on
     echo $c->SQLEdit($db_name,$table);
     include "paginate.php";
 </code></pre>
-<h2>Insructions for Usage</h2>
+<h2>Quick User Guide</h2>
 <h2>Screenshots</h2>
 
