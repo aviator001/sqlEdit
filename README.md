@@ -4,7 +4,14 @@ Generate web app to view, add and edit data in any MySQL table or Query in just 
 There are in fact 2 main functions, sqlEdit and sqlBrowse. As explained. sqlEdit has the ability ot add.modify data, however sqlBrowse can only generate view only apps.
 <h2>Practical Applications</h2>
 <h3>Rapid Development</h3>
-<h3>Ancillary Capacity to Primary Application</h3>
+<h3>Ancillary Capacity to Primary Applications, such as:</h3>
+<h4>
+1. Basic customer data management and admin tool
+2. Fronted self help content editing tool for clients
+3. Backend rporting tool for clients
+4. Display daily billing summary
+5. Display daily signup and customer traffic
+6 ..and so on...
 <h4>
 <h2>Requirements and Dependencies</h2>
 <h3>PHP Classes</h3>
