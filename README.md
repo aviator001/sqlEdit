@@ -113,18 +113,16 @@ pagination=on
 
 <h2>Real World Code Samples</h2>
 <pre><code>
-	/** Modify first 2 lines only! 
-	  * $db_name:  Enter the MySQL table that you want to edit data for, and,
-	  * $table: Enter the MySQL Database Name that has the table you want to edit
-          *****************************************************************************/
-	
-	$db_name="Enter database name";
-	$table="Enter name of table you want to edit";
-	parse_str(http_build_query($_GET));
-	include "class/utils.class.php";
-	$c=new utils;
-	$c->connect(DB_SERVER,DB_USER,DB_PASS,$db_name);
-	echo $c->SQLEdit($db_name,$table);
-	include "paginate.php";
-
+/** Modify first 2 lines only! 
+  * $db_name:  Enter the MySQL table that you want to edit data for, and,
+  * $table: Enter the MySQL Database Name that has the table you want to edit
+  *****************************************************************************/
+$db_name="Enter database name";
+$table="Enter name of table you want to edit";
+parse_str(http_build_query($_GET));
+include "class/utils.class.php";
+$c=new utils;
+$c->connect(DB_SERVER,DB_USER,DB_PASS,$db_name);
+echo $c->SQLEdit($db_name,$table);
+include "paginate.php";
 </code></pre>
