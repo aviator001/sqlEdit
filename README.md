@@ -67,14 +67,14 @@ https://gangsterforms.com/sqlEdit.zip
 
 <div>Once downloaded, unzip archive anywhere.
 
-
 <h3>Step 2 </h3>
 <h4>Configure settings.ini</h4>
 
 <div>Both options, GIT and Zip file download it will create a folder call sqlEdit. As part of the next an final step, you will configure your settings, by modifying the settings.ini file that is in the sqlEdit folder.</div>
-
+<br>
 <div>Configure your settings.ini file with the information below and you  mare done with configuration.</div>
 <div>Here is a full last of parameters  that you can set in the settings.ini file.:</div>
+<br>
 <ul>
 <li>Database Server IP</li>
 <li>Database Username</li>
@@ -85,19 +85,14 @@ https://gangsterforms.com/sqlEdit.zip
 <pre><code>
 <b><i>#Database user name</i></b>
 db_user=
-
 <b><i>#Database password</i></b>
 db_pass=
-
 <b><i>#Name of the database trying to connect to</i></b>
 db_name=
-
 <b><i>#Database Server IP Address without any quotes</i></b>
 db_server=
-
 <b><i>#Max number of items to be displayed per page</i></b>
 items_per_page=5
-
 <b><i>#Max number of items to be displayed per page</i></b>
 pagination=on
 </pre></code>
@@ -108,23 +103,23 @@ pagination=on
 <div>Once settings.ini is configured, open up the sample code php file - and enter in values fro the database and table (first 2 lines  as shown below.)</div>
 
 <h3>Step 2</h3>
-<h4>Run sampleCode.php'</h4>
+<h4>Run sampleCode.php</h4>
 <div>Open sampleCode.php in your browser, and you will be presented with the data from the table that you specified in editable format.</div>
 
 <h2>Real World Code Samples</h2>
 <pre><code>
-/*******************************************************************************
+ /*******************************************************************************
   * Modify first 2 lines only! 
   * $db_name:  Enter the MySQL table that you want to edit data for, and,
   * $table: Enter the MySQL Database Name that has the table you want to edit
   *****************************************************************************/
   
-  $db_name="Enter database name";
-  $table="Enter name of table you want to edit";
-  parse_str(http_build_query($_GET));
-  include "class/utils.class.php";
-  $c=new utils;
-  $c->connect(DB_SERVER,DB_USER,DB_PASS,$db_name);
-  echo $c->SQLEdit($db_name,$table);
-  include "paginate.php";
+    $db_name="Enter database name";
+    $table="Enter name of table you want to edit";
+    parse_str(http_build_query($_GET));
+    include "class/utils.class.php";
+    $c=new utils;
+    $c->connect(DB_SERVER,DB_USER,DB_PASS,$db_name);
+    echo $c->SQLEdit($db_name,$table);
+    include "paginate.php";
 </code></pre>
