@@ -51,21 +51,29 @@ Data is, without exception, loaded using the jquery ajax library, and as a rtesu
 
 
 <h2>Installation</h2>
-<h3>OPTION 1: GIT</h3>
-<div> This the easiest way; Run the following code in shell</div>
-<h4>STEP 1 </h4>
+<div>2 step process. Get files, and configure. Done. You can get the source files in 2 ways. GIT or download a zip.</div>
+
+<h3>STEP 1 </h3>
+<h4>Option 1</h4>
 <pre><code>
 git clone https://github.com/aviator001/sqlEdit.git
 </code></pre>
-Once downloaded, it create a folder call sqlEdit.
-<h4>STEP 2 </h4>
+
+<h3>Option 2</h3>
+<h4>Download from link below:>/h4>
 <pre><code>
-cd sqlEdit
+https://gangsterforms.com/sqlEdit.zip
 </code></pre>
 
-<h4>STEP 3 </h4>
-<h4>settings.ini</h4>
-First, you will need to do a one time setup - configure your settings.ini file with the information below and you  mare done with configuration.
+<div>Once downloaded, unzip archive anywhere.
+
+
+<h3>STEP 2 </h3>
+<h4>Configure settings.ini</h4>
+
+<div>Both options, GIT and Zip file download it will create a folder call sqlEdit. As part of the next an final step, you will configure your settings, by modifying the settings.ini file that is in the sqlEdit folder.</div>
+
+<div>Configure your settings.ini file with the information below and you  mare done with configuration.</div>
 <div>Here is a full last of parameters  that you can set in the settings.ini file.:</div>
 <ul>
 <li>Database Server IP</li>
