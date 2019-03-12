@@ -60,7 +60,7 @@
 	//echo $qry;
 ?>
 		<link href="https://fonts.googleapis.com/css?family=Orbitron|Open+Sans+Condensed:300" rel="stylesheet">
-		<link rel="stylesheet" href="rangeslider.css">
+		<link rel="stylesheet" href="php/rangeslider.css">
 		<style>
 			.rangeslider,
 			.rangeslider__fill {
@@ -71,7 +71,7 @@
 			width:100%;
 			}
 			.rangeslider__fill {
-			background:url(images/rsbg.png)
+			background:url(php/images/rsbg.png)
 			}
 			.rangeslider--is-lowest-value {
 			background-color: white;
@@ -95,28 +95,28 @@
 		<? if ($c->is_mobile()) { ?>
 		<div class="col-md-12" style="text-align:center;opacity:1;position:fixed;bottom:0;left:0;height:120px;background:#f0f0f0;overflow:hidden">
 			<input style="position:absolute;margin-top:200px" type="range" min="0" max="<?=$lp;?>">
-			<a href="<?=$first_page;?>"><img id="p10" src="images/first.png" style="width:10%;text-align:right;opacity:<?=$pf;?>"></a>
-			<a href="<?=$qsp10;?>"><img id="p10" src="images/prev_few.png" style="width:15%;text-align:right;opacity:<?=$p10;?>"></a>
-			<a href="<?=$qsp;?>"><img id="p1" style="width:20%;opacity:<?=$p0;?>" src="images/prev.png"></a>
-			<a href="<?=$qsn;?>"><img id="n1" style="width:20%;opacity:<?=$n0;?>"  src="images/next.png"></a>
-			<a href="<?=$qsn10;?>"><img id="n10" src="images/next_few.png" style="width:15%;opacity:<?=$n10;?>"></a>
-			<a href="<?=$last_page;?>"><img id="n10" src="images/last.png" style="width:10%;opacity:<?=$pl;?>"></a>
+			<a href="<?=$first_page;?>"><img id="p10" src="php/images/first.png" style="width:10%;text-align:right;opacity:<?=$pf;?>"></a>
+			<a href="<?=$qsp10;?>"><img id="p10" src="php/images/prev_few.png" style="width:15%;text-align:right;opacity:<?=$p10;?>"></a>
+			<a href="<?=$qsp;?>"><img id="p1" style="width:20%;opacity:<?=$p0;?>" src="php/images/prev.png"></a>
+			<a href="<?=$qsn;?>"><img id="n1" style="width:20%;opacity:<?=$n0;?>"  src="php/images/next.png"></a>
+			<a href="<?=$qsn10;?>"><img id="n10" src="php/images/next_few.png" style="width:15%;opacity:<?=$n10;?>"></a>
+			<a href="<?=$last_page;?>"><img id="n10" src="php/images/last.png" style="width:10%;opacity:<?=$pl;?>"></a>
 		</div>
 		<? } else { ?><br>
 		<div id="rangeHolder" style="width:1200px;max-width:1200px;margin:auto">
-			<input style="position:absolute;margin-top:220px;margin:auto" type="range" min="0" max="<?=$lp;?>">		
+			<input style="position:absolute;margin-top:220px;margin:auto" type="range" min="0" max="<?=($lp*1);?>">		
 		</div>
 		<div class="col-md-12" style="text-align:center;opacity:1">
-			<a href="<?=$first_page;?>"><img id="p10" src="images/first.png" style="width:50px;text-align:right;opacity:<?=$pf;?>"></a>
-			<a href="<?=$qsp10;?>"><img id="p10" src="images/prev_few.png" style="width:75px;text-align:right;opacity:<?=$p10;?>"></a>
-			<a href="<?=$qsp;?>"><img id="p1" style="width:100px;opacity:<?=$p0;?>" src="images/prev.png"></a>
-			<a href="<?=$qsn;?>"><img id="n1" style="width:100px;opacity:<?=$n0;?>"  src="images/next.png"></a>
-			<a href="<?=$qsn10;?>"><img id="n10" src="images/next_few.png" style="width:75px;opacity:<?=$n10;?>"></a>
-			<a href="<?=$last_page;?>"><img id="n10" src="images/last.png" style="width:50px;opacity:<?=$pl;?>"></a>
+			<a href="<?=$first_page;?>"><img id="p10" src="php/images/first.png" style="width:50px;text-align:right;opacity:<?=$pf;?>"></a>
+			<a href="<?=$qsp10;?>"><img id="p10" src="php/images/prev_few.png" style="width:75px;text-align:right;opacity:<?=$p10;?>"></a>
+			<a href="<?=$qsp;?>"><img id="p1" style="width:100px;opacity:<?=$p0;?>" src="php/images/prev.png"></a>
+			<a href="<?=$qsn;?>"><img id="n1" style="width:100px;opacity:<?=$n0;?>"  src="php/images/next.png"></a>
+			<a href="<?=$qsn10;?>"><img id="n10" src="php/images/next_few.png" style="width:75px;opacity:<?=$n10;?>"></a>
+			<a href="<?=$last_page;?>"><img id="n10" src="php/images/last.png" style="width:50px;opacity:<?=$pl;?>"></a>
 		</div>
 		<? } ?>
-		<script src="js/jquery.js"></script>
-		<script src="rangeslider.min.js"></script>
+		<script src="php/js/jquery.js"></script>
+		<script src="php/rangeslider.min.js"></script>
 		<script>
 			var qstr,qry,start,page,table=qs('table')
 			var items_per_page='<?=ITEMS_PER_PAGE;?>'
@@ -133,7 +133,7 @@
 							console.log(value)
 							gotoPage(value)
 							$('#pns').text(value+1)
-							document.getElementsByClassName('rangeslider__handle')[0].innerHTML='<div style="width:150px;position:absolute;margin-bottom:50px;height:60px;bottom:0;">Page: <span style="padding:5px;background:cyan;border-radius:6px">' + (value+1) + '</span><br><br><br></div>'
+							document.getElementsByClassName('rangeslider__handle')[0].innerHTML='<div style="width:150px;position:absolute;margin-bottom:50px;height:60px;bottom:0;">Page: <span style="padding:5px;background:cyan;border-radius:6px">'+(value+1)+'</span><br><br><br></div>'
 							var padding="15px";
 							var paddingL="17px"
 							var paddingR="17px"
@@ -154,7 +154,7 @@
 						}
 					})
 				});
-				$('input[type=range]').val(<?=$page;?>)
+				$('input[type=range]').val(<?=$page*1+1;?>)
 				var xt
 				function gotoPage(page) {
 					clearTimeout(xt)
@@ -204,7 +204,7 @@
 					} else {
 						qry=qs('query') + " limit " + page + "," + items_per_page;
 					}
-					var url='getEditHTML.php?wideView='+getCookie('wideView')+'&qry='+qry+'&'+qstr+'&db='+getCookie('db_name')
+					var url='php/getEditHTML.php?wideView='+getCookie('wideView')+'&qry='+qry+'&'+qstr+'&db='+getCookie('db_name')
 					$.ajax({
 						url		:	url,
 						success	:	function(data){
