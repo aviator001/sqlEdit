@@ -29,21 +29,21 @@ There are in fact 2 main functions, sqlEdit and sqlBrowse. As explained. sqlEdit
 PHP, MySQL
 
 <h1>Features</h1>
-<h3>1.0 Data Manipulation</h2>
-<h4>1.1 Browse MySQL Data</h3>
-<h4>1.2 Edit MySQL table in browser</h3>
-<h4>1.3 Add New Row</h3>
-<h4>1.4 Add New Row</h3>
-<h4>1.5 Delete Row</h3>
-<h4>2.0 Data Presentation</h2>
-<h4>2.1 Auto detect mobile - 100% responsive</h3>
-<h3>2.2 Select View Mode:</h3>
+<h2>1.0 Data Manipulation</h2>
+<h4>1.1 Browse MySQL Data</h4>
+<h4>1.2 Edit MySQL table in browser</h4>
+<h4>1.3 Add New Row</h4>
+<h4>1.4 Add New Row</h4>
+<h4>1.5 Delete Row</h4>
+<h2>2.0 Data Presentation</h2>
+<h4>2.1 Auto detect mobile - 100% responsive</h4>
+<h4>2.2 Select View Mode:</h4>
 <div>Switch easily between 2 display modes</div>
 <ul>
     <li>Boxed format</li>
     <li>Full width format</li>
  </ul>
-<h3>2.3 Select Data Presentation Format</h3>
+<h4>2.3 Select Data Presentation Format</h4>
 <div>Switch easily between 2 data formats</div>
 <ul>
     <li>Grid View</li>
