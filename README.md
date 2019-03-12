@@ -91,7 +91,11 @@ image_upload_folder=5
     catalog_tb_name=autocomplete
 </code></pre>
 <h3>Installation</h3>
-<h3>Setup</h3>
+<h4>OPTION 1: COMPOSER</h4>
+<div> This the easiest way; Run the following code in shell</div>
+<pre><code>
+composer require gangsterforms/sqledit
+<h4>OPTION 2: GIT</h4>
 <h3>Step by Step Insructions for Usage</h3>
 <h3>Real World Code Samples</h3>
 <pre><code>
