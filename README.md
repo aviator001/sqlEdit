@@ -29,46 +29,45 @@ There are in fact 2 main functions, sqlEdit and sqlBrowse. As explained. sqlEdit
 PHP, MySQL
 
 <h1>Features</h1>
-<h2>Data Manipulation</h2>
-<h3>Browse MySQL Data</h3>
-<h3>Edit MySQL table in browser</h3>
-<h3>Add New Row</h3>
-<h3>Add New Row</h3>
-<h3>Delete Row</h3>
-<h2>Data Presentation</h2>
-<h3>Auto detect mobile - 100% responsive</h3>
-<h3>View Modes:</h3>
+<h2>1.0 Data Manipulation</h2>
+<h3>1.1 Browse MySQL Data</h3>
+<h3>1.2 Edit MySQL table in browser</h3>
+<h3>1.3 Add New Row</h3>
+<h3>1.4 Add New Row</h3>
+<h3>1.5 Delete Row</h3>
+<h2>2.0 Data Presentation</h2>
+<h3>2.1 Auto detect mobile - 100% responsive</h3>
+<h3>2.2 Select View Mode:</h3>
 <div>Switch easily between 2 display modes</div>
 <ul>
     <li>Boxed format</li>
     <li>Full width format</li>
  </ul>
-<h3>Data View Format</h3>
+<h3>2.3 Select Data Presentation Format</h3>
 <div>Switch easily between 2 data formats</div>
 <ul>
     <li>Grid View</li>
     <li>Single record form mode</li>
  </ul>
  
-<h2>Pagination</h2>
+<h2>3.0 Pagination</h2>
 The automatic pagination uses a truly unique approach to seemless handle datasets ranging from 10 rows to 2 million rows, all without any complicated juggling of page numbers or special case handling code - and what resulys is one of the cleanest pagination implementations that you will see, that handles 10 pages the same way it handles 2,000,000. See examples or screenshots for examples.
 
 Pagination may be turned off or on at any time by seeting the config values in the settings.ini file.
 
-<h3>Styling</h3>
-User has full athority of look and feel etc and may set their own styles and class at the desgnated sections that handless css rules.
-
-<h3>Flexibility and ease of Configuration</h3>
-Even though it is ridiculously simple to use, we still need to tell it where to find your databse/tables etc. This is done through the configuration file ('settings.ini'). It also has a bunch of other optional parameters, which if not set by you, have little impact on the proper functioning of the object.
-
-<h3>Data View Management</h3>
+<h2>4.0 Auto Data Format</h2>
 Easily switch back and forth between the 2 available views - Boxed layout or full width layout, used in order to ease cluttering and conjestion when working on tables with a large nuber of colums or fieldsets.
 
 There exists a trigger point, beyond which, if exceeded, the number of colums is exceeded, the display format switches automatically from the default 'grid view' to the row based 'fieldlist' mode, and each field is displayed on a new page row, and showing only one table record at a time. Subsequent rows are fetched upon the user requesting pages higher in number, using generated page links in the pagination area or by manipulating the page selctoe widget at the bottom of the screen.
 
-<h3>User Experience.</h3>
-Data is, without exception, loaded using the jquery ajax library, and as a rtesult, the user is never put through the experience of being constantly interrupted, while waiting for pages reloading over and over, and circumventing the creation of unnecessay high amount of stress externally in the network, and internally on the webserver filesystem i/o operations.
+<h2>5.0 Custom CSS</h2>
+User has full athority of look and feel etc and may set their own styles and class at the desgnated sections that handless css rules.
 
+<h2>6.0 Flexibility and ease of Configuration</h2>
+Even though it is ridiculously simple to use, we still need to tell it where to find your databse/tables etc. This is done through the configuration file ('settings.ini'). It also has a bunch of other optional parameters, which if not set by you, have little impact on the proper functioning of the object.
+
+<h2>7.0 User Experience.</h2>
+Data is, without exception, loaded using the jquery ajax library, and as a rtesult, the user is never put through the experience of being constantly interrupted, while waiting for pages reloading over and over, and circumventing the creation of unnecessay high amount of stress externally in the network, and internally on the webserver filesystem i/o operations.
 
 <h2>Installation</h2>
 <div>2 step process. Get files, and configure. Done. You can get the source files in 2 ways. GIT or download a zip.</div>
